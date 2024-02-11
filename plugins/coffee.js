@@ -9,7 +9,7 @@ let handler = async (m, {
     try {
         await m.reply(wait)
         let cofe = "https://coffee.alexflipnote.dev/random"
-        await conn.sendFile(m.chat, cofe, "", "*[ إحتسي لك كأسا من القهوة ]*", m)
+        await conn.sendFile(m.chat, cofe, "", "*[ اجي نشربو القهوة ]*", m)
     } catch (e) {
         throw eror
     }
