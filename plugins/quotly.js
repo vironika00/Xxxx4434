@@ -29,7 +29,7 @@ let handler = async (m, {
         }
         reply = {};
     } else {
-        throw "مثال :\n\n*.quotly skipo bot* \n\nأو هــكــذا \n\n*.quotlyv2 bobiza bot* \n\nاو هــكـذا \n\n*.quotlyv3 bobiza bot*";
+        throw "مثال :\n\n*.quotly skipo bot* \n\nأو هــكــذا \n\n*.quotlyv2 skipo bot* \n\nاو هــكـذا \n\n*.quotlyv3 skipo bot*";
     }
 
     await m.reply(wait)
