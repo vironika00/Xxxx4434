@@ -12,7 +12,7 @@ let handler = async (m, {
     text,
     command
 }) => {
-    if (!text) throw "هذا الامر خاص بعمل شعارات باسمك \nمثال:\n*.brandcrowd* noureddine"
+    if (!text) throw "هذا الامر خاص بعمل شعارات باسمك \nمثال:\n*.brandcrowd* Anas"
     try {
             await m.reply(wait)
             let res = await BrandCrowd(text)
