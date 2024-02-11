@@ -26,7 +26,7 @@ let handler = async (m, {
     if (/video/g.test(mime)) {
         if ((q.msg || q).seconds > 11) return m.reply('Maksimal 10 detik!')
     }
-    if (!/webp|image|video|gif|viewOnce/g.test(mime)) return m.reply(`قم بالاشارة لصورة واكتب الامر متبوعا باقتباس مثال \n\n${usedPrefix + command} bobiza bot`)
+    if (!/webp|image|video|gif|viewOnce/g.test(mime)) return m.reply(`قم بالاشارة لصورة واكتب الامر متبوعا باقتباس مثال \n\n${usedPrefix + command} skipo bot`)
     m.reply(wait)
     let img = await q.download?.()
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
