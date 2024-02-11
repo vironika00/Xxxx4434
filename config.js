@@ -10,9 +10,9 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['212605784394', 'bobiza', true],
+  ['212605784394', 'skipo', true],
 
-  ['212605784394','bobiza', true],
+  ['212605784394','skipo', true],
   ['212605784394'],
   ['212605784394']
 ];
@@ -20,13 +20,13 @@ global.owner = [
 global.suittag = ['212605784394'];
 global.prems = ['212605784394'];
 
-global.packname = 'bobiza bot';
-global.author = 'bobiza';
-global.wm = 'bobiza';
-global.titulowm = 'bobiza';
-global.titulowm2 = `bobiza`
-global.igfg = 'bobiza';
-global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥\ninstagram.com/noureddine_ouafy';
+global.packname = '亗『𝐒𝐊𝐈𝐏𝐎 𝐁𝐎𝐓』亗';
+global.author = 'ミ💖 Anas 💖彡';
+global.wm = '亗『𝐒𝐊𝐈𝐏𝐎 𝐁𝐎𝐓』亗';
+global.titulowm = 'skipo';
+global.titulowm2 = `skipo`
+global.igfg = 'ミ💖Anas💖彡';
+global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥';
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
@@ -48,8 +48,8 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 global.wm2 = `${dia} ${fecha}\nBOBIZA`;
 global.gt = 'BOBIZA';
 global.mysticbot = 'The BOBIZA';
-global.md = 'https://instagram.com/noureddine_ouafy';
-global.mysticbot = 'https://instagram.com/noureddine_ouafy';
+global.md = 'https://instagram.com/_y._cx';
+global.mysticbot = 'https://instagram.com/_y._cx';
 global.waitt = '*[ ⏳ ] LOADING...*';
 global.waittt = '*[ ⏳ ] LOADING...*';
 global.waitttt = '*[ ⏳ ] LOADING...*';
