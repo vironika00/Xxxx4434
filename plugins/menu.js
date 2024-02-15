@@ -136,7 +136,7 @@ text: text,
 contextInfo: {
 externalAdReply: {
 title: 'SKIPO BOT ♥',
-body: "أول بوت واتساب في العالم العربي 💖",
+body: "The first boat in Tetouan💖",
 thumbnailUrl: 'https://telegra.ph/file/c1bc6a02d4cfef48ef8c6.jpg',
 sourceUrl: 'https://instagram.com',
 mediaType: 1,
