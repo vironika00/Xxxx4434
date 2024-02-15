@@ -21,7 +21,7 @@ let tags = {
   'uploader':'‎‎ رفع الملفات‎',
 }
 const defaultMenu = {
-  before: `السلام عليكم 👋. 
+  before: ` welcome 👋. 
 
 ┏━━ salam  *%name*
 👥 *Total user:* %totalreg 
@@ -136,10 +136,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: 'BOBIZA BOT ♥',
+title: 'SKIPO BOT ♥',
 body: "أول بوت واتساب في العالم العربي 💖",
-thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
-sourceUrl: 'https://instagram.com/noureddine_ouafy',
+thumbnailUrl: 'https://telegra.ph/file/c1bc6a02d4cfef48ef8c6.jpg',
+sourceUrl: 'https://instagram.com',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
@@ -158,7 +158,7 @@ renderLargerThumbnail: true
 }
 handler.help = ['menu']
 handler.tags = ['infobot']
-handler.command = ['menu','b','list'] 
+handler.command = ['menu','x','list'] 
 handler.register = false
 
 
