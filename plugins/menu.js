@@ -32,7 +32,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*Use a robot correctly*\n+212675129263',
+  after: '*Use a robot correctly*',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -136,7 +136,6 @@ text: text,
 contextInfo: {
 externalAdReply: {
 title: 'SKIPO BOT ♥',
-body: "The first boat in Tetouan💖",
 thumbnailUrl: 'https://telegra.ph/file/c1bc6a02d4cfef48ef8c6.jpg',
 mediaType: 1,
 renderLargerThumbnail: true
