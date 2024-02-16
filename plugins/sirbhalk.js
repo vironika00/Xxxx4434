@@ -1,8 +1,8 @@
-import fetch from 'node-fetch'
-import axios from 'axios'
-import { sticker } from '../lib/sticker.js'
-import MessageType from '@adiwajshing/baileys'
-//import db from '../lib/database.js'
+import fetch from  node-fetch 
+import axios from  axios 
+import { sticker } from  ../lib/sticker.js 
+import MessageType from  @adiwajshing/baileys 
+//import db from  ../lib/database.js 
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 	
@@ -22,12 +22,12 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
    let { url } = jkis
    let stiker = await sticker(null, url, `(${name2}) راه كنقصد ههه\ninstagram.com/noureddine_ouafy`, `${name}`)
    conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
-   await m.reply('🗡️')  
+   await m.reply( 🗡️ )  
    
 }
 
-handler.help = ['sirbhalk']
-handler.tags = ['sticker']
+handler.help = [ sirbhalk ]
+handler.tags = [ sticker ]
 handler.command = /^sirbhalk$/i
 handler.group = false
 
