@@ -140,7 +140,7 @@ thumbnailUrl: 'https://telegra.ph/file/c1bc6a02d4cfef48ef8c6.jpg',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
-conn.sendMessage(m.chat, {audio: { url:  https://files.catbox.moe/sbxowo.mp4  }, mimetype: audio/mpeg , ptt:true }, {quoted:m})
+    
     /*conn.sendFile(m.chat, 'menu.png', text.trim(), m, null, )
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
