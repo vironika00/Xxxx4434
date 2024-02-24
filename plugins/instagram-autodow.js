@@ -1,26 +1,31 @@
-import fetch from  node-fetch ;
+import fetch from 'node-fetch';
 
-export async function before(m) {
-    const regex = /(https?:\/\/(?:www\.)?instagram\.[a-z\.]{2,6}\/[\w\-\.]+(\/[^\s]*)?)/g;
-    const matches = m.text.trim().match(regex);
-    const chat = global.db.data.chats[m.chat];
-    const spas = "                ";
-
-    if (!matches || !matches[0] || chat.autodlInstagram !== true) return;
-
-    await m.reply(wait);
-
+const handler = async function (m, { conn }) {
+    const args = m.text.split(' ');
     try {
-        const res = await fetch(`https://vihangayt.me/download/instagram?url=${matches[0]}`);
-        const igeh = await res.json();
-        const IgCap = `${spas}*[ INSTAGRAM ]*`;
+        if (args.length > 0) {
+            m.reply('*المرجو الانتظار سيتم تحميل الفيديو بعد قليل*');
+            const url = args[0];
+            let res = await (await fetch(`https://api.lolhuman.xyz/api/instagram?apikey=5c168427edb54007b897cefe&url=${url}`)).json(); 
 
-        if (igeh.data && igeh.data.data.length > 0) {
-            for (const item of igeh.data.data) {
-                await conn.sendFile(m.chat, item.url || giflogo, "", IgCap, m);
+            if (!res.result || res.result.length === 0) throw "لا يمكن العثور على الفيديو في الرابط";
+            conn.sendFile(m.chat, res.result[0], '', 'instagram.com/noureddine_ouafy', m);
+
+            for (let imgs of res.result) {   
+                let ban = m.mentionedJid[0] || m.sender || conn.parseMention(args[0]) || (args[0].replace(/[@.+-]/g, '').replace(' ', '') + '@s.whatsapp.net') || '';
+
+                if (ban) {
+                    conn.sendFile(m.chat, imgs, '', null);
+                }
             }
         }
-    } catch (e) {}
-}
+    } catch (error) {
+        console.log(error);
+        m.reply('حدث خطأ أثناء معالجة طلبك.');
+    }
+};
 
-export const disabled = false;
+handler.customPrefix =  /^(?:https?:\/\/)?(?:www\.)?(?:instagram\.com\/)(?:tv\/|p\/|reel\/)(?:\S+)?$/ig;
+handler.command = new RegExp();
+
+export default handler;
