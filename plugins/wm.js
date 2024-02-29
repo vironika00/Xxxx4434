@@ -1,6 +1,6 @@
 import { addExif } from '../lib/sticker.js'
 let handler = async (m, { conn, text }) => {
-if (!m.quoted) throw 'الرجاء الاشارة الى الملصق الذي تريد أن تغير حقوقه مثال : \n *.wm noureddine ouafy*'
+if (!m.quoted) throw 'الرجاء الاشارة الى الملصق الذي تريد أن تغير حقوقه مثال : \n *.wm anas.x*'
 let stiker = false
 try {
 let [packname, ...author] = text.split('|')
