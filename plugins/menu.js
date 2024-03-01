@@ -136,7 +136,7 @@ text: text,
 contextInfo: {
 externalAdReply: {
 title: 'SKIPO BOT ♥',
-thumbnailUrl: 'https://telegra.ph/file/c1bc6a02d4cfef48ef8c6.jpg',
+thumbnailUrl: 'https://telegra.ph/file/4bf00ea11f8a47827acd4.jpg',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
